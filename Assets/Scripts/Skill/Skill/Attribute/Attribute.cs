@@ -5,7 +5,8 @@ namespace Skill
 {
     public partial class Attribute
     {
-         
+
+        public float m_DelayTime { get; set; }
 
         private int m_Id;
         private int m_Name;
