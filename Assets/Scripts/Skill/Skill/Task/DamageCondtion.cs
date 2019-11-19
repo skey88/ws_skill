@@ -24,8 +24,12 @@ namespace Skill
         {
             base.Start();
             //to-do 这里需要根据技能类型创建不同类型的伤害计算，这里简单的已处理加固定血量来模拟计算
+            SkillAttack sa = new SkillAttack();
+            sa.Target = new List<Entity>(); 
+            sa.Target.Add(m_Skill.Target);
+            int result = this.m_Skill.Caculate(sa);
 
-            int result = this.m_Skill.Caculate(new FixAddHp());
+            //int result = this.m_Skill.Caculate(new FixAddHp());
             if (m_Result != null) m_Result(result);
             //注意: 伤害计算结束后需要触发伤害计算结束的事件,来终止任务的执行
             EventsMgr.GetInstance().TriigerEvent(EventsType.Skill_EndDmg, null);

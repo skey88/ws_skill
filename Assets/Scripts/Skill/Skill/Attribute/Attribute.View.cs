@@ -8,7 +8,8 @@ namespace Skill
 
 
         public float m_DelayTime { get; set; }
-          
+        public Transform trans { get; set; }
+
         /// <summary>
         /// 释放的挂点
         /// </summary>

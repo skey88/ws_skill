@@ -8,6 +8,10 @@ namespace Skill
 {
     public class SkillTable 
     {
+
+
+        public int SkillType { get; set; }
+
         private int m_Id;
         private int m_Cost;
 

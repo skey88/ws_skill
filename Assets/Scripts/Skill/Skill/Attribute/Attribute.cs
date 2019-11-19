@@ -5,6 +5,8 @@ namespace Skill
 {
     public partial class Attribute
     {
+         
+
         private int m_Id;
         private int m_Name;
         private int m_CostMp;

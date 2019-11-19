@@ -1,13 +1,11 @@
-﻿using System;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-/// <summary>
-/// 普通攻击
-/// </summary>
+
 namespace Skill
 {
-    public class NormalAttack : IDamage
+
+    public class SkillAttack : IDamage
     {
         /// <summary>
         /// 对象
@@ -35,7 +33,7 @@ namespace Skill
                 foreach (var target in m_Target)
                 {
                     target.Hp -= value;
-                    if (target.Hp<0) target.Hp = 0; 
+                    if (target.Hp < 0) target.Hp = 0;
                 }
             }
             return value;

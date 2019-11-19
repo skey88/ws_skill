@@ -5,7 +5,11 @@ using System.Collections.Generic;
 
 public class ws_attackAble_obj : MonoBehaviour {
 
-   public  Entity obj_entity;
+
+    public Transform Effect_EmitParent;
+    public Transform Effect_HitParent;
+
+    public  Entity obj_entity;
 
     protected virtual void Awake()
     {
@@ -16,6 +20,7 @@ public class ws_attackAble_obj : MonoBehaviour {
         obj_entity.MaxMp = 100;
         obj_entity.Fight = 10;
         obj_entity.Defence = 10;
+        obj_entity.trans = gameObject.transform;
         List<Buff> list = new List<Buff>();
         Buff b = new Buff();
         b.AtRound = 1;

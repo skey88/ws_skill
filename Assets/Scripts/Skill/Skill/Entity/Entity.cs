@@ -7,6 +7,9 @@ namespace Skill
 {
     public partial class Entity : IBuff
     {
+        public Transform trans { get; set; }
+
+
         private string m_Name;
         private int m_MaxHp;
         private int m_MaxMp;

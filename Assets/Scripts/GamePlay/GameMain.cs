@@ -22,12 +22,16 @@ public class GameMain : MonoBehaviour {
         attribute.Mute = mlist;
         attribute.CD = 3;
         attribute.AtRound = 1;
-        attribute.Value = 6;
+        attribute.Value = 10+ obj.obj_entity.Fight;
+        attribute.Effect_EmitParent = obj.Effect_EmitParent;
+        attribute.Effect_EmitName = "ef01";
+        attribute.Effect_HitParent = obj.Effect_HitParent;
+        attribute.Effect_HitName = "ef02";
 
         Entity obj_entity = obj.obj_entity;
         obj_entity.Name = "战舰01";
         obj_entity.Fight = 20;
-        Entity obj_entity2 = new Entity();
+        Entity obj_entity2 = obj2.obj_entity;
         obj_entity2.Name = "战舰02";
         obj_entity2.Fight = 10; 
 
@@ -94,14 +98,16 @@ public class GameMain : MonoBehaviour {
         Task.TaskManager.Instance().AddTask(emitTask);
 
         //打击效果
-        //Task.Task hitTask = new Task.Task("打击效果", new HitCondition(skill, 1));
-        //Task.TaskManager.Instance().AddTask(hitTask);
+        Task.Task hitTask = new Task.Task("打击效果", new HitCondition(skill, 1));
+        Task.TaskManager.Instance().AddTask(hitTask);
 
         ////启动任务队列
-        //TaskManager.Instance().Start(">>>技能施法流程", delegate ()
-        //{
-        //    skill.End();
-        //});
+        TaskManager.Instance().Start(">>>技能施法流程", delegate ()
+        {
+            Debug.Log("Hp:" + obj.obj_entity.Hp);
+            Debug.Log("Hp2:" + obj2.obj_entity.Hp);
+            skill.End();
+        });
     }
 
     public void SkillEnd(Skill.Skill sk)
