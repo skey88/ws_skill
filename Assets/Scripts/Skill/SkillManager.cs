@@ -3,17 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using Task;
 using SkillTask = Task.Task;
-namespace Skill
+namespace SkillSystem
 {
     public delegate void TrigSkill(Skill skill);
 
-    public class SkillManager : ISingleton<SkillManager>
+    public class SkillManager 
     {
         /// <summary>
         /// 需要根据需要初始化技能数据
         /// </summary>
         private Dictionary<int, SkillTable> m_Skills;
+        /// <summary>
+        /// 任务管理器
+        /// </summary>
+        private WsTaskManager m_tm;
 
+
+        public  SkillManager(WsTaskManager tm)
+        {
+            m_tm = tm;
+        }
+
+        public void InitSkillList()
+        {
+
+
+        } 
         /// <summary>
         /// 技能的合法性验证， 通过TrigSkill返回触发的技能
         /// </summary>
@@ -56,7 +71,7 @@ namespace Skill
             //to-do吟唱 吟唱时间可以根据表格来
             TimeCondition singCond = new TimeCondition(skill.Attribute.m_DelayTime);
             SkillTask singTask = new SkillTask("吟唱任务", singCond);
-            TaskManager.Instance().AddTask(singTask);
+            m_tm.AddTask(singTask);
             //伤害计算
             DamageCondtion dmgCond = new DamageCondtion(skill, 
                                                         delegate (int result) 
@@ -65,9 +80,9 @@ namespace Skill
                                                         }, 
                                                         EventsType.Skill_EndDmg);
             SkillTask dmgTask = new SkillTask("伤害检查", dmgCond);
-            TaskManager.Instance().AddTask(dmgTask);
+            m_tm.AddTask(dmgTask);
             //启动任务队列
-            TaskManager.Instance().Start(">>>技能伤害计算流程");
+            m_tm.Start(">>>技能伤害计算流程");
         }
 
         /// <summary>
@@ -79,14 +94,14 @@ namespace Skill
         {
             //释放特效
             SkillTask emitTask = new SkillTask("释放", new CastCondition(skill, 0.5f));
-            Task.TaskManager.Instance().AddTask(emitTask);
+            m_tm.AddTask(emitTask);
 
             //打击效果
             SkillTask hitTask = new SkillTask("打击效果", new HitCondition(skill, 1));
-            Task.TaskManager.Instance().AddTask(hitTask);
+            m_tm.AddTask(hitTask);
 
             //启动任务队列
-            TaskManager.Instance().Start(">>>技能施法流程", delegate ()
+            m_tm.Start(">>>技能施法流程", delegate ()
             {
                 skill.End();
             });

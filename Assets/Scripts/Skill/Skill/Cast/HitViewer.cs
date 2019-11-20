@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-namespace Skill
+namespace SkillSystem
 {
     /// <summary>
     /// 受击特效需要绑定的脚本，用于结束受击打特效

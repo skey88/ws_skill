@@ -6,7 +6,7 @@ using UnityEngine;
 /// <summary>
 /// 当前生命的百分比
 /// </summary>
-namespace Skill
+namespace SkillSystem
 {
     public class RateAddHp : IDamage
     {

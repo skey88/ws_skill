@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Skill;
+using SkillSystem;
 public class TestSkill : MonoBehaviour {
 
 	IEnumerator Start () {
@@ -9,7 +9,7 @@ public class TestSkill : MonoBehaviour {
         attribute.CostMp = 5;
         attribute.m_DelayTime = 2;
 
-        Skill.Skill windy = new Skill.Skill();
+        SkillSystem.Skill windy = new SkillSystem.Skill();
         Entity sakura = new Entity();
         sakura.Name = "小樱";
         sakura.Mp = 10;

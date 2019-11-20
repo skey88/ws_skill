@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Skill
+namespace SkillSystem
 {
     public delegate void SkillComplate(Skill skill);
     public interface ISkill

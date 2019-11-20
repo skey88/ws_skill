@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-namespace Skill
+namespace SkillSystem
 {
     public class MpException : Exception
     {

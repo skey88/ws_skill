@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// 伤害处理条件
 /// </summary>
-namespace Skill
+namespace SkillSystem
 {
     public class HitCondition : Task.TimesCondition
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Task;
-namespace Skill
+namespace SkillSystem
 {
     public delegate void DamageResult(int result);
     public class DamageCondtion : EventCondition

@@ -4,7 +4,7 @@ using UnityEngine;
 /// <summary>
 /// 技能表，根据需要初始化技能原生数据，一般情况是excel
 /// </summary>
-namespace Skill
+namespace SkillSystem
 {
     public class SkillTable 
     {

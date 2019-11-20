@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
 /// 可行性检查被打断了
-namespace Skill
+namespace SkillSystem
 {
     public class InterruptValid : IInterrupt
     {

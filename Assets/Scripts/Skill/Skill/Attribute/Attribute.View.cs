@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Skill
-{
+namespace SkillSystem
+{ 
     public partial class Attribute
     {
 
@@ -13,19 +13,19 @@ namespace Skill
         /// <summary>
         /// 释放的挂点
         /// </summary>
-        private Transform m_Effect_EmitParent;
+        public Transform m_Effect_EmitParent;
         /// <summary>
         /// 受击的挂点
         /// </summary>
-        private Transform m_Effect_HitParent;
+        public Transform m_Effect_HitParent;
         /// <summary>
         /// 释放特效名字
         /// </summary>
-        private string m_Effect_EmitName;
+        public string m_Effect_EmitName;
         /// <summary>
         /// 受击特效名字
         /// </summary>
-        private string m_Effect_HitName;
+        public string m_Effect_HitName;
 
         public string Effect_EmitName
         {

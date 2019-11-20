@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Skill
+namespace SkillSystem
 {
     /// <summary>
     /// 吟唱过程中被打断了

@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Task;
-using SkillTask = Task.Task;
-using Skill;
+using SkillTask = Task.Task; 
 
 public class ResManager : ISingleton<ResManager>
 {

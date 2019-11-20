@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// 普通攻击
 /// </summary>
-namespace Skill
+namespace SkillSystem
 {
     public class NormalAttack : IDamage
     {

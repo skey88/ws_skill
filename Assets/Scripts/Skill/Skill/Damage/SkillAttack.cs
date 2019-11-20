@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Skill
+namespace SkillSystem
 {
 
     public class SkillAttack : IDamage

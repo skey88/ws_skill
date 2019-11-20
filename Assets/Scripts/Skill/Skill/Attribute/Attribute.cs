@@ -1,36 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Skill
+namespace SkillSystem
 {
+    [System.Serializable]
     public partial class Attribute
     {
          
 
-        private int m_Id;
-        private int m_Name;
-        private int m_CostMp;
-        private int m_CD;
+        public int m_Id;
+        public int m_Name;
+        public int m_CostMp;
+        public int m_CD;
         /// <summary>
         /// BUFF 作用的回合数
         /// </summary>
-        private int m_AffectRound;
+        public int m_AffectRound;
         /// <summary>
         /// Buff在第几回合开始作用
         /// </summary>
-        private int m_AtRound;
+        public int m_AtRound;
         /// <summary>
         /// 作用值
         /// </summary>
-        private int m_Value;
+        public int m_Value;
         /// <summary>
         /// 互斥的技能列表, 用于技能驱散
         /// </summary>
-        private List<int> m_Mute;
+        public List<int> m_Mute;
         /// <summary>
         /// 伤害造成的段数
         /// </summary>
-        private int m_Segment;
+        public int m_Segment;
 
 
         public int Name

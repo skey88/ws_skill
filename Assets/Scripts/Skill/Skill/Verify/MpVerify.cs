@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Skill
+namespace SkillSystem
 {
     public class MpVerify : IVerify
     {

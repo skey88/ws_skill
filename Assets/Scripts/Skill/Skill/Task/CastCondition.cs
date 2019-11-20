@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Task;
-namespace Skill
+namespace SkillSystem
 {
     public class CastCondition : TimeCondition
     {
