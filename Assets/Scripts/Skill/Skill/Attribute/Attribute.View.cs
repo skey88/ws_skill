@@ -7,7 +7,6 @@ namespace SkillSystem
     {
 
 
-        public float m_DelayTime { get; set; }
         public Transform trans { get; set; }
 
         /// <summary>

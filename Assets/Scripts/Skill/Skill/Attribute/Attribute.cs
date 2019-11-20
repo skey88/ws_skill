@@ -6,7 +6,8 @@ namespace SkillSystem
     [System.Serializable]
     public partial class Attribute
     {
-         
+
+        public float m_DelayTime { get; set; }
 
         public int m_Id;
         public int m_Name;
