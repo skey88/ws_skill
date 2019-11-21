@@ -1,0 +1,1119 @@
+fileFormatVersion: 2
+guid: 49b302a513fbdb1419c4e9dbf0c0f7dc
+timeCreated: 1555931812
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: btn_add
+    21300002: btn_biandui
+    21300004: btn_chuanku
+    21300006: btn_chuanwu
+    21300008: btn_haoyou
+    21300010: btn_liaotian
+    21300012: btn_pingmu
+    21300014: btn_pingmusuoding
+    21300016: btn_renwu
+    21300018: btn_shangdian
+    21300020: btn_shezhi
+    21300022: btn_weikaiqi
+    21300024: btn_wuzhuang
+    21300026: btn_yincang
+    21300028: btn_yincang_c
+    21300030: btn_youjian
+    21300032: dt_btn_grda
+    21300034: dt_btn_guanka
+    21300036: dt_btn_jidi
+    21300038: dt_btn_yjsh
+    21300040: dt_hd_1
+    21300042: dt_hd_2
+    21300044: dt_hd_3
+    21300046: dt_hd_btn_1
+    21300048: dt_hd_btn_2
+    21300050: dt_hd_btn_3
+    21300052: dt_list
+    21300054: list_zjxq_14
+    21300056: load_ziyuan
+    21300058: lt_list
+    21300060: tit_max
+    21300062: comm_icon_jiaobiao
+    21300064: dbj_diban_wenyang_white
+    21300066: comm_icon_jiaobiao_gth
+    21300068: kuang_guanqia
+    21300070: nb_a_0
+    21300072: nb_a_1
+    21300074: nb_a_2
+    21300076: nb_a_3
+    21300078: nb_a_4
+    21300080: nb_a_5
+    21300082: nb_a_6
+    21300084: nb_a_7
+    21300086: nb_a_8
+    21300088: nb_a_9
+    21300090: nb_a_maohao
+    21300092: rk_btn_dhz
+    21300094: rk_btn_jdqx
+    21300096: rk_btn_pq
+    21300098: rk_btn_tbxl
+    21300100: rk_btn_uca
+    21300102: rk_btn_yys
+    21300104: tuan_jiahao_big
+    21300106: tuan_zuoxiajiao
+    21300108: zhuangshi1
+    21300110: zhuangshi2
+    21300112: zhuangshi3
+    21300114: zhuangshi4
+    21300116: zhuangshi5
+    21300118: comm_tips
+    21300120: di_left
+    21300122: btn_5
+    21300124: btn_return
+    21300126: view_8
+    21300128: btn_guanbi
+    21300130: btn_jqhg
+    21300132: lt_list_2
+    21300134: lt_list_3
+    21300136: lt_list_4
+    21300138: lt_list_5
+    21300140: dt_hd_btn_4
+    21300142: dt_hd_btn_5
+    21300144: btn_cangku
+    21300146: icon_huodong
+    21300148: dt_hd_btn_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 1
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    compressionQuality: 50
+    allowsAlphaSplitting: 1
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    compressionQuality: 50
+    allowsAlphaSplitting: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: btn_5
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 1860
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_add
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1559
+        width: 82
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_biandui
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1430
+        width: 74
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_cangku
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 1475
+        width: 105
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_chuanku
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 1372
+        width: 103
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_chuanwu
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1639
+        width: 76
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_guanbi
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1151
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_haoyou
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1132
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_jqhg
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1175
+        width: 241
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_liaotian
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1464
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_pingmu
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1544
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_pingmusuoding
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1491
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_renwu
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1178
+        width: 66
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_return
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 1562
+        width: 222
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_shangdian
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 1302
+        width: 94
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_shezhi
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1107
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_weikaiqi
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 1727
+        width: 49
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_wuzhuang
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 1367
+        width: 98
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_yincang
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1312
+        width: 67
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_yincang_c
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1264
+        width: 67
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_youjian
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1306
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: comm_icon_jiaobiao
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 1804
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 17, y: 0, z: 14, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: comm_icon_jiaobiao_gth
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 1738
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: comm_tips
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1148
+        width: 58
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dbj_diban_wenyang_white
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 1920
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 1, w: 1}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: di_left
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1211
+        width: 73
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 45, z: 28, w: 50}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_btn_grda
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 1466
+        width: 542
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_btn_guanka
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1340
+        width: 453
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_btn_jidi
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1206
+        width: 384
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_btn_yjsh
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 1456
+        width: 118
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 68, y: 0, z: 40, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_hd_1
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 2025
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_hd_2
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 1946
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_hd_3
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1360
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_hd_btn_1
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1028
+        width: 349
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_hd_btn_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 908
+        width: 349
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_hd_btn_3
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 1019
+        width: 349
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_hd_btn_4
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 850
+        width: 349
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_hd_btn_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 730
+        width: 349
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_hd_btn_6
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 1009
+        width: 349
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dt_list
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1240
+        width: 70
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 33, y: 0, z: 32, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: icon_huodong
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 1389
+        width: 110
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: kuang_guanqia
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1524
+        width: 68
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 51, y: 0, z: 13, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: list_zjxq_14
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 1340
+        width: 90
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 3, z: 80, w: 19}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: load_ziyuan
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 1717
+        width: 140
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lt_list
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1036
+        width: 295
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lt_list_2
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 1350
+        width: 98
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lt_list_3
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 1772
+        width: 162
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lt_list_4
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 1979
+        width: 196
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lt_list_5
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 842
+        width: 264
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: nb_a_0
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1699
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: nb_a_1
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 1699
+        width: 7
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: nb_a_2
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 1688
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: nb_a_3
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 1659
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: nb_a_4
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 1916
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: nb_a_5
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 1996
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: nb_a_6
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 1967
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: nb_a_7
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1670
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: nb_a_8
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1641
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: nb_a_9
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1612
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: nb_a_maohao
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1785
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rk_btn_dhz
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1726
+        width: 551
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rk_btn_jdqx
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1728
+        width: 576
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rk_btn_pq
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1409
+        width: 546
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rk_btn_tbxl
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1086
+        width: 422
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rk_btn_uca
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1644
+        width: 690
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rk_btn_yys
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1197
+        width: 463
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tit_max
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1306
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tuan_jiahao_big
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 1353
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tuan_zuoxiajiao
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 1642
+        width: 130
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: view_8
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1612
+        width: 80
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 0, z: 35, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhuangshi1
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 960
+        width: 266
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhuangshi2
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 1727
+        width: 151
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhuangshi3
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 1535
+        width: 121
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhuangshi4
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 1187
+        width: 82
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zhuangshi5
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 1926
+        width: 196
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
