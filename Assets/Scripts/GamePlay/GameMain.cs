@@ -58,8 +58,8 @@ public class GameMain : MonoBehaviour {
         b.AtRound = 1;
         list.Add(b);
 
-        obj_entity.AddBuff(skill);
-        obj_entity2.AddBuff(skill);
+        //obj_entity.AddBuff(skill);
+        //obj_entity2.AddBuff(skill);
         skill.Init(obj_entity, obj_entity2, attribute, SkillEnd);
         //检验流程
         bool isvalid = skill.IsValid(new MpVerify());

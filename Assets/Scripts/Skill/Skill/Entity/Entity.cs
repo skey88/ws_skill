@@ -7,7 +7,9 @@ namespace SkillSystem
 {
     public partial class Entity : IBuff
     {
-        public Transform trans { get; set; }
+        public Transform trans { get; set; } 
+
+        public Dictionary<WsBuffState,bool> buffStateDict { get; set; }
 
 
         private string m_Name;
@@ -17,9 +19,13 @@ namespace SkillSystem
         private int m_Mp;
         private int m_Fight;
         private int m_Defence;
-        private int m_Crit;
-
+        private int m_Crit; 
         private List<Buff> m_BuffList;
+
+
+
+
+
 
         public int Hp
         {
@@ -123,6 +129,23 @@ namespace SkillSystem
             {
                 m_MaxMp = value;
             }
+        }
+        public void AddBuff(Buff b)
+        {
+            if (m_BuffList == null)
+                m_BuffList = new List<SkillSystem.Buff>();
+
+            m_BuffList.Add(b); 
+            //for (int i = 0; i < m_BuffList.Count; i++)
+            //{
+            //    AttributeBuff ab = b as AttributeBuff;
+            //    if (ab!=null)
+            //    {
+            //        Fight += ab.m_Fight;
+            //        Defence += ab.m_Defence;
+            //        Crit += ab.m_Crit; 
+            //    } 
+            //} 
         }
 
         public void AddBuff(Skill skill, int round = 0)

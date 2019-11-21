@@ -19,12 +19,12 @@ namespace SkillSystem
             base.Start();
             //TO-DO 创建特效
             GameObject go = ResManager.Instance().Load(m_Skill.Attribute.Effect_EmitName);
-            go.transform.SetParent(m_Skill.Attribute.Effect_EmitParent);
-            go.transform.localPosition = Vector3.zero;
-            go.transform.LookAt(m_Skill.Target.trans);
+            //go.transform.SetParent(m_Skill.Target.trans);
+            go.transform.position = m_Skill.Target.trans.position;
+            //go.transform.LookAt(m_Skill.Target.trans);
             //go.transform.Translate(m_Skill.Target.trans.position);
              
-            go.transform.Translate(Vector3.forward, Space.World);
+            //go.transform.Translate(Vector3.forward, Space.World);
 
 
             //go.transform.localScale = Vector3.one;

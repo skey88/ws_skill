@@ -84,7 +84,20 @@ namespace SkillSystem
             //启动任务队列
             m_tm.Start(">>>技能伤害计算流程");
         }
-
+        public  void Fire02(Skill skill)
+        {
+            //伤害计算
+            DamageCondtion dmgCond = new DamageCondtion(skill,
+                                                        delegate (int result)
+                                                        {
+                                                            HandleCast(skill, result);
+                                                        },
+                                                        EventsType.Skill_EndDmg);
+            Task.Task dmgTask = new Task.Task("伤害检查" + skill.Attribute.Name, dmgCond);
+            m_tm.AddTask(dmgTask);
+            //启动任务队列
+            m_tm.Start("技能伤害计算流程" + skill.Attribute.Name);
+        }
         /// <summary>
         /// 处理施法
         /// </summary>

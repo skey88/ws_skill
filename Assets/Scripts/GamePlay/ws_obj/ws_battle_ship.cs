@@ -16,11 +16,12 @@ public class ws_battle_ship : ws_fight_obj
         skill = new Skill();
         skill.Attribute = attribute;
         List<Buff> list = new List<Buff>();
-        Buff b = new Buff();
-        b.AtRound = 1;
+        AttributeBuff b = new AttributeBuff();
+        b.m_BuffTime = 10;
+        b.m_Fight = 50;
         list.Add(b);
-
-        obj_entity.AddBuff(skill);
+        skill.Attribute.m_BuffList.AddRange(list);
+        obj_entity.AddBuff(b);
         sm.InitSkillList();
     }
 

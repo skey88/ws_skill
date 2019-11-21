@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour {
     void Start()
     {
         fwd = transform.InverseTransformDirection(Vector3.forward);
-        transform.Translate(fwd);
+        //transform.Translate(fwd);
     }
      
     void Update()
@@ -23,6 +23,6 @@ public class Bullet : MonoBehaviour {
     }
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }

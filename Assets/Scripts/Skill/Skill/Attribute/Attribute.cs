@@ -7,7 +7,8 @@ namespace SkillSystem
     public partial class Attribute
     {
 
-        public float m_DelayTime { get; set; }
+        public float m_DelayTime;
+        public List<Buff> m_BuffList;
 
         public int m_Id;
         public int m_Name;
@@ -16,11 +17,11 @@ namespace SkillSystem
         /// <summary>
         /// BUFF 作用的回合数
         /// </summary>
-        public int m_AffectRound;
+        public int m_BuffAffectRound;
         /// <summary>
         /// Buff在第几回合开始作用
         /// </summary>
-        public int m_AtRound;
+        public int m_BuffAtRound;
         /// <summary>
         /// 作用值
         /// </summary>
@@ -78,12 +79,12 @@ namespace SkillSystem
         {
             get
             {
-                return m_AffectRound;
+                return m_BuffAffectRound;
             }
 
             set
             {
-                m_AffectRound = value;
+                m_BuffAffectRound = value;
             }
         }
 
@@ -106,12 +107,12 @@ namespace SkillSystem
         {
             get
             {
-                return m_AtRound;
+                return m_BuffAtRound;
             }
 
             set
             {
-                m_AtRound = value;
+                m_BuffAtRound = value;
             }
         }
 
