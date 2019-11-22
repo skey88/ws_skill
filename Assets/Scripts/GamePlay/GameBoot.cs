@@ -36,7 +36,8 @@ public class GameBoot : MonoBehaviour {
 
     public void Skill0201()
     {
-        obj2.sm.Fire(obj2.skill);
+        //obj2.sm.Fire(obj2.skill);
+        obj.Fire2(obj.skill);
     }
     public void Skill0202()
     {

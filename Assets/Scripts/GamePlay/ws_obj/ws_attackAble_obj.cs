@@ -24,7 +24,8 @@ public class ws_attackAble_obj : MonoBehaviour {
         obj_entity.MaxMp = 100;
         obj_entity.Fight = 10;
         obj_entity.Defence = 10;
-        obj_entity.trans = gameObject.transform;
+        obj_entity.trans = gameObject.transform; 
+        attribute.m_BuffList = new List<Buff>();
         List<Buff> list = new List<Buff>();
         Buff b = new Buff();
         b.AtRound = 1;

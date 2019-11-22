@@ -168,14 +168,14 @@ namespace SkillSystem
         public void Disperse(List<int> disperseList)
         {
             List<Buff> list = new List<Buff>();
-            foreach (var buff in m_BuffList)
-            {
-                if (disperseList.Contains(buff.Skill.Attribute.Id))
-                {
-                    list.Add(buff);
-                }
-            }
-            EventsMgr.GetInstance().TriigerEvent(EventsType.Skill_Disperse, list);
+            //foreach (var buff in m_BuffList)
+            //{
+            //    if (disperseList.Contains(buff.Skill.Attribute.Id))
+            //    {
+            //        list.Add(buff);
+            //    }
+            //}
+            //EventsMgr.GetInstance().TriigerEvent(EventsType.Skill_Disperse, list);
         }
 
         public bool IsInvencible()

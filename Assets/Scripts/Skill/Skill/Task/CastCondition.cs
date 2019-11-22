@@ -5,18 +5,18 @@ using Task;
 namespace SkillSystem
 {
     public class CastCondition : TimeCondition
-    {
-
-        Vector3 fwd;
+    { 
         private Skill m_Skill;
         public CastCondition(Skill skill, float duration) : base(duration)
         {
-            this.m_Skill = skill;
+            this.m_Skill = skill; 
+            Debug.Log("CastCondition1------------------------");
         }
 
         public override void Start()
         {
             base.Start();
+            Debug.Log("CastCondition2------------------------");
             //TO-DO 创建特效
             GameObject go = ResManager.Instance().Load(m_Skill.Attribute.Effect_EmitName);
             //go.transform.SetParent(m_Skill.Target.trans);

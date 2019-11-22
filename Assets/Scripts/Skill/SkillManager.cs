@@ -72,19 +72,48 @@ namespace SkillSystem
             TimeCondition singCond = new TimeCondition(skill.Attribute.m_DelayTime);
             SkillTask singTask = new SkillTask("吟唱任务", singCond);
             m_tm.AddTask(singTask);
+            //释放特效
+            //SkillTask buffTask = new SkillTask("释放Buff", new BuffCondition(skill.Attribute.m_BuffList[0], 5));
+            //m_tm.AddTask(buffTask);
+            //m_tm.Start("释放Buff");
             //伤害计算
-            DamageCondtion dmgCond = new DamageCondtion(skill, 
-                                                        delegate (int result) 
+            DamageCondtion dmgCond = new DamageCondtion(skill,
+                                                        delegate (int result)
                                                         {
                                                             HandleCast(skill, result);
-                                                        }, 
+                                                        },
                                                         EventsType.Skill_EndDmg);
             SkillTask dmgTask = new SkillTask("伤害检查", dmgCond);
             m_tm.AddTask(dmgTask);
             //启动任务队列
-            m_tm.Start(">>>技能伤害计算流程");
+            m_tm.Start("吟唱任务");
         }
-        public  void Fire02(Skill skill)
+       
+        /// <summary>
+        /// 处理施法
+        /// </summary>
+        /// <param name="skill"></param>
+        /// <param name="result"></param>
+        private void HandleCast(Skill skill, int result)
+        {
+
+            //释放特效
+            SkillTask emitTask = new SkillTask("释放", new CastCondition(skill, 3f));
+            m_tm.AddTask(emitTask);
+
+           
+            //打击效果
+            SkillTask hitTask = new SkillTask("打击效果", new HitCondition(skill, 1));
+            m_tm.AddTask(hitTask);
+
+            //启动任务队列
+            m_tm.Start(">>>技能施法流程", delegate ()
+            {
+                skill.End();
+            });
+        }
+
+        public void Fire02(Skill skill)
         {
             //伤害计算
             DamageCondtion dmgCond = new DamageCondtion(skill,
@@ -98,26 +127,6 @@ namespace SkillSystem
             //启动任务队列
             m_tm.Start("技能伤害计算流程" + skill.Attribute.Name);
         }
-        /// <summary>
-        /// 处理施法
-        /// </summary>
-        /// <param name="skill"></param>
-        /// <param name="result"></param>
-        private void HandleCast(Skill skill, int result)
-        {
-            //释放特效
-            SkillTask emitTask = new SkillTask("释放", new CastCondition(skill, 0.5f));
-            m_tm.AddTask(emitTask);
 
-            //打击效果
-            SkillTask hitTask = new SkillTask("打击效果", new HitCondition(skill, 1));
-            m_tm.AddTask(hitTask);
-
-            //启动任务队列
-            m_tm.Start(">>>技能施法流程", delegate ()
-            {
-                skill.End();
-            });
-        } 
     }
 }

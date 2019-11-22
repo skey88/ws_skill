@@ -14,7 +14,7 @@ namespace Task {
 
         public TimeCondition(float duration) {
             this.m_duration = duration;
-            this.m_IsFinish = false;
+            this.m_IsFinish = false; 
         }
 
         public void Handle()
@@ -35,7 +35,7 @@ namespace Task {
 
         public virtual void Start()
         {
-            this.m_startTime = Time.time;
+            this.m_startTime = Time.time; 
         }
     }
 }
