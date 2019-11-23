@@ -2,10 +2,11 @@
 using System.Collections;
 using SkillSystem;
 using System.Collections.Generic;
-using Task;
+using TaskSystem;
 
 public class ws_attackAble_obj : MonoBehaviour {
 
+    public ulong obj_Id;
     public WsTaskManager tm;
     public SkillManager sm;
     public Attribute attribute;
@@ -15,9 +16,10 @@ public class ws_attackAble_obj : MonoBehaviour {
 
     protected virtual void Awake()
     {
-        tm = gameObject.AddComponent<WsTaskManager>();
+        tm = new WsTaskManager();
         sm = new SkillManager(tm);
         obj_entity = new Entity();
+        obj_entity.m_Id = 100000001;
         obj_entity.Hp = 100;
         obj_entity.Mp = 100;
         obj_entity.MaxHp = 100;

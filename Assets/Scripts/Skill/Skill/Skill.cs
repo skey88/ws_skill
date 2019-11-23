@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using SkillTask = Task.Task;
+using SkillTask = TaskSystem.Task;
 namespace SkillSystem
 {
     public class Skill : ISkill
@@ -99,7 +99,7 @@ namespace SkillSystem
 
         }
 
-        public IEnumerator Sing(Task.Task task)
+        public IEnumerator Sing(TaskSystem.Task task)
         {
             yield return task;
         }

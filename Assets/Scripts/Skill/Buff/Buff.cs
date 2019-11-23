@@ -18,18 +18,22 @@ namespace SkillSystem
 
 
         /// <summary>
-        /// Buff影响时间
+        /// Buff
         /// </summary>
         public string m_BuffName;
         /// <summary>
-        /// Buff影响时间
+        /// Buff影响多长时间
         /// </summary>
         public float m_BuffTime;
+        /// <summary>
+        /// Buff延迟多长时间开始生效
+        /// </summary>
+        public float m_DelayTime;
 
 
         public virtual void AddBuff()
         {
-            Debug.Log("AddBuff------------------------"+ m_BuffName);
+            Debug.Log("AddBuff---------------------------"+ m_BuffName);
         }
 
 

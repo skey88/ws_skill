@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 namespace SkillSystem
 {
-    public class HitCondition : Task.TimesCondition
+    public class HitCondition : TaskSystem.TimesCondition
     {
         private Skill m_Skill;
         public HitCondition(Skill skill, int times) : base(times)

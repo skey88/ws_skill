@@ -7,6 +7,8 @@ namespace SkillSystem
 {
     public partial class Entity : IBuff
     {
+
+        public ulong m_Id { get; set; }
         public Transform trans { get; set; } 
 
         public Dictionary<WsBuffState,bool> buffStateDict { get; set; }

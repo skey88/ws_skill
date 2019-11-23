@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Task;
+using TaskSystem;
 
 public class TestTask : MonoBehaviour {
-    Queue<Task.Task> taskQueue = new Queue<Task.Task>();
+    Queue<TaskSystem.Task> taskQueue = new Queue<TaskSystem.Task>();
     public Button btn;
-    Task.Task curTask;
+    TaskSystem.Task curTask;
 
     IEnumerator Start () {
-        Task.Task task1 = new Task.Task("第一个任务 时间任务，间隔两秒", new TimeCondition(5.0f));
+        TaskSystem.Task task1 = new TaskSystem.Task("第一个任务 时间任务，间隔两秒", new TimeCondition(5.0f));
         TaskManager.Instance().AddTask(task1);
-        Task.Task task2 = new Task.Task("第二个任务 次数任务，3", new TimesCondition(3));
-        Task.Task task3 = new Task.Task("第三个任务 点击按钮",  new TirggerCondition(btn));
+        TaskSystem.Task task2 = new TaskSystem.Task("第二个任务 次数任务，3", new TimesCondition(3));
+        TaskSystem.Task task3 = new TaskSystem.Task("第三个任务 点击按钮",  new TirggerCondition(btn));
         TaskManager.Instance().AddTask(task2);
         TaskManager.Instance().AddTask(task3);
 

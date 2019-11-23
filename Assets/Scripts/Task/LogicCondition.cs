@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Task;
+using TaskSystem;
 using System;
 
-namespace Task
+namespace TaskSystem
 {
     public class LogicCondition : ITaskCondition
     {

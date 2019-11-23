@@ -26,8 +26,8 @@ public class TestSkill : MonoBehaviour {
 
 
         Debug.Log("准备 吟唱");
-        Task.TimeCondition cond = new Task.TimeCondition(attribute.m_DelayTime);
-        Task.Task task = new Task.Task("吟唱动画", cond);
+        TaskSystem.TimeCondition cond = new TaskSystem.TimeCondition(attribute.m_DelayTime);
+        TaskSystem.Task task = new TaskSystem.Task("吟唱动画", cond);
 
         yield return StartCoroutine(windy.Sing(task));
 

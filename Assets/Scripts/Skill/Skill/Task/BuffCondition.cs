@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using Task;
+using TaskSystem;
 
 namespace SkillSystem
 {

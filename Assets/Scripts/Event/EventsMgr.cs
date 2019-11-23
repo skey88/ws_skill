@@ -3,6 +3,9 @@
 /// </summary>
 using UnityEngine;
 using System.Collections.Generic;
+
+//公共委托事件
+public delegate void CommonEvent(object data);
 public class EventsMgr  {
 
     private static EventsMgr instance;
@@ -12,9 +15,8 @@ public class EventsMgr  {
             instance = new EventsMgr();
         return instance;
     }
-    //公共委托事件
-    public delegate void CommonEvent(object data);
-
+               
+    public Dictionary<ulong, EventEntity> m_dicAllEvents = new Dictionary<ulong, EventEntity>();
     //事件列表
     public Dictionary<EventsType, CommonEvent> m_dicEvents = new Dictionary<EventsType, CommonEvent>();
 
@@ -102,3 +104,4 @@ public class EventsMgr  {
         }
     } 
 }
+

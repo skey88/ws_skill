@@ -1,15 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Task;
+using TaskSystem;
 namespace SkillSystem
 {
     public delegate void DamageResult(int result);
     public class DamageCondtion : EventCondition
     {
+        private ulong m_Id;
         private Skill m_Skill;
         private DamageResult m_Result;
-        public DamageCondtion(Skill skill, DamageResult result, EventsType type) : base(type)
+        public DamageCondtion(Skill skill, DamageResult result, EventsType type,ulong Id) : base(type)
         {
             this.m_Skill = skill;
             this.m_Result = result;
@@ -30,9 +31,12 @@ namespace SkillSystem
             int result = this.m_Skill.Caculate(sa);
 
             //int result = this.m_Skill.Caculate(new FixAddHp());
-            if (m_Result != null) m_Result(result);
+            if (m_Result != null)
+                m_Result(result);
             //注意: 伤害计算结束后需要触发伤害计算结束的事件,来终止任务的执行
-            EventsMgr.GetInstance().TriigerEvent(EventsType.Skill_EndDmg, null);
+            //EventsMgr.GetInstance().TriigerEvent(EventsType.Skill_EndDmg, null);
+
+            GlobalEventsMgr.GetInstance().SendEvent(m_Id, EventsType.Skill_DamageEnd, result);
         }
     }
 }

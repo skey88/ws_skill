@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Task;
+using TaskSystem;
 namespace SkillSystem
 {
     public class CastCondition : TimeCondition
@@ -20,7 +20,7 @@ namespace SkillSystem
             //TO-DO 创建特效
             GameObject go = ResManager.Instance().Load(m_Skill.Attribute.Effect_EmitName);
             //go.transform.SetParent(m_Skill.Target.trans);
-            go.transform.position = m_Skill.Target.trans.position;
+            go.transform.position = m_Skill.Caster.trans.position + Vector3.one ;
             //go.transform.LookAt(m_Skill.Target.trans);
             //go.transform.Translate(m_Skill.Target.trans.position);
              

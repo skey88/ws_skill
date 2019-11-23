@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine; 
 using System; 
 
-namespace Task
+namespace TaskSystem
 { 
-    public class WsTaskManager : MonoBehaviour
+    public class WsTaskManager 
     {
 
+        //private Dictionary<string, Queue<Task>> m_QueueDict = new Dictionary<string, Queue<Task>>();
         private Queue<Task> m_TaskQueue = new Queue<Task>();
         /// <summary>
         /// 当前任务

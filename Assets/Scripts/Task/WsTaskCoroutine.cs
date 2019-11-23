@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-namespace Task
+namespace TaskSystem
 {
     public class WsTaskCoroutine : MonoBehaviour
     {
@@ -21,14 +21,16 @@ namespace Task
         protected IEnumerator Handle()
         {
             Task current = m_tm.Next();
+            int i = 0;
             while (current != null)
             {
-                Debug.Log(string.Format("当前执行的任务序列{0}, 当前任务{1}", this.m_QueueName, current.m_Name));
+                i++;
+                Debug.Log(string.Format(i+".当前执行的队列： {0} , 当前任务：（{1}）", this.m_QueueName, current.m_Name));
                 yield return current;
                 current = m_tm.Next();
             }
             StopAllCoroutines();
-            Debug.Log(string.Format("结束: 任务序列{0}", this.m_QueueName));
+            Debug.Log(string.Format(i + ".队列结束: {0}", this.m_QueueName));
             if (m_Complate != null)
             {
                 m_Complate();

@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Task;
-using SkillTask = Task.Task; 
+using TaskSystem;
+using SkillTask = TaskSystem.Task; 
 
 public class ResManager : ISingleton<ResManager>
 {

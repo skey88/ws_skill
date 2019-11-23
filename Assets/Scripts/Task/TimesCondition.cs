@@ -6,7 +6,7 @@ using UnityEngine;
 /// <summary>
 /// 次数作为任务条件
 /// </summary>
-namespace Task {
+namespace TaskSystem {
     public class TimesCondition : ITaskCondition
     {
         protected int m_times;

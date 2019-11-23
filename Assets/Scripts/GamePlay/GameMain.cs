@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using SkillSystem;
-using Task;
+using TaskSystem;
 using System.Collections.Generic;
 
 public class GameMain : MonoBehaviour {
@@ -74,8 +74,8 @@ public class GameMain : MonoBehaviour {
     public IEnumerator DoSkill( Skill s)
     {
         Debug.Log("准备 吟唱");
-        Task.TimeCondition cond = new Task.TimeCondition(s.Attribute.m_DelayTime);
-        Task.Task task = new Task.Task("吟唱动画", cond);
+        TaskSystem.TimeCondition cond = new TaskSystem.TimeCondition(s.Attribute.m_DelayTime);
+        TaskSystem.Task task = new TaskSystem.Task("吟唱动画", cond);
 
         yield return s.Sing(task);
 
@@ -87,7 +87,7 @@ public class GameMain : MonoBehaviour {
     {
         //to-do吟唱 吟唱时间可以根据表格来
         TimeCondition singCond = new TimeCondition(skill.Attribute.m_DelayTime);
-        Task.Task singTask = new Task.Task("吟唱任务", singCond);
+        TaskSystem.Task singTask = new TaskSystem.Task("吟唱任务", singCond);
         TaskManager.Instance().AddTask(singTask);
         //伤害计算
         DamageCondtion dmgCond = new DamageCondtion(skill,
@@ -95,8 +95,8 @@ public class GameMain : MonoBehaviour {
                                                     {
                                                         HandleCast(skill, result);
                                                     },
-                                                    EventsType.Skill_EndDmg);
-        Task.Task dmgTask = new Task.Task("伤害检查", dmgCond);
+                                                    EventsType.Skill_DamageEnd,skill.Caster.m_Id);
+        TaskSystem.Task dmgTask = new TaskSystem.Task("伤害检查", dmgCond);
         TaskManager.Instance().AddTask(dmgTask);
         //启动任务队列
         TaskManager.Instance().Start(">>>技能伤害计算流程");
@@ -109,12 +109,12 @@ public class GameMain : MonoBehaviour {
     private void HandleCast( Skill skill, int result)
     {
         //释放特效
-        Task.Task emitTask = new Task.Task("释放", new CastCondition(skill, 0.5f));
-        Task.TaskManager.Instance().AddTask(emitTask);
+        TaskSystem.Task emitTask = new TaskSystem.Task("释放", new CastCondition(skill, 0.5f));
+        TaskSystem.TaskManager.Instance().AddTask(emitTask);
 
         //打击效果
-        Task.Task hitTask = new Task.Task("打击效果", new HitCondition(skill, 1));
-        Task.TaskManager.Instance().AddTask(hitTask);
+        TaskSystem.Task hitTask = new TaskSystem.Task("打击效果", new HitCondition(skill, 1));
+        TaskSystem.TaskManager.Instance().AddTask(hitTask);
 
         ////启动任务队列
         TaskManager.Instance().Start(">>>技能施法流程", delegate ()
@@ -141,8 +141,8 @@ public class GameMain : MonoBehaviour {
                                                     {
                                                         HandleCast(skill, result);
                                                     },
-                                                    EventsType.Skill_EndDmg);
-        Task.Task dmgTask = new Task.Task("伤害检查", dmgCond);
+                                                    EventsType.Skill_DamageEnd, skill.Caster.m_Id);
+        TaskSystem.Task dmgTask = new TaskSystem.Task("伤害检查", dmgCond);
         TaskManager.Instance().AddTask(dmgTask);
         //启动任务队列
         TaskManager.Instance().Start(">>>技能伤害计算流程");

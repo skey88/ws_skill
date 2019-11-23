@@ -27,7 +27,7 @@ namespace SkillSystem
         /// <summary>
         /// 吟唱
         /// </summary>
-        IEnumerator Sing(Task.Task task);
+        IEnumerator Sing(TaskSystem.Task task);
         /// <summary>
         /// 伤害计算
         /// </summary>

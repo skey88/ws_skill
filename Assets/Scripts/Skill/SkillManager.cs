@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Task;
-using SkillTask = Task.Task;
+using TaskSystem;
+using SkillTask = TaskSystem.Task;
 namespace SkillSystem
 {
     public delegate void TrigSkill(Skill skill);
@@ -82,7 +82,7 @@ namespace SkillSystem
                                                         {
                                                             HandleCast(skill, result);
                                                         },
-                                                        EventsType.Skill_EndDmg);
+                                                        EventsType.Skill_DamageEnd,skill.Caster.m_Id);
             SkillTask dmgTask = new SkillTask("伤害检查", dmgCond);
             m_tm.AddTask(dmgTask);
             //启动任务队列
@@ -121,8 +121,8 @@ namespace SkillSystem
                                                         {
                                                             HandleCast(skill, result);
                                                         },
-                                                        EventsType.Skill_EndDmg);
-            Task.Task dmgTask = new Task.Task("伤害检查" + skill.Attribute.Name, dmgCond);
+                                                        EventsType.Skill_DamageEnd, skill.Caster.m_Id);
+            TaskSystem.Task dmgTask = new TaskSystem.Task("伤害检查" + skill.Attribute.Name, dmgCond);
             m_tm.AddTask(dmgTask);
             //启动任务队列
             m_tm.Start("技能伤害计算流程" + skill.Attribute.Name);

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 /// <summary>
 /// 按钮触发任务类型
 /// </summary>
-namespace Task
+namespace TaskSystem
 {
     public class TirggerCondition:ITaskCondition
     {

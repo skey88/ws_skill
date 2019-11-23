@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// 事件类型的任务
 /// </summary>
-namespace Task
+namespace TaskSystem
 {
     public class EventCondition : ITaskCondition
     {
