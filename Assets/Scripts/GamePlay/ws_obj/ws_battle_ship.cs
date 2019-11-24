@@ -21,13 +21,15 @@ public class ws_battle_ship : ws_fight_obj
         b.m_BuffName = "buff001";
         b.m_DelayTime = 5;
         b.m_BuffTime = 5;
-        b.m_Fight = 50;
+        b.m_Fight = 500;
+        b.m_Value = 500;
         list.Add(b);
         AttributeBuff b2 = new AttributeBuff();
         b2.m_BuffName = "buff002";
         b.m_DelayTime = 30;
         b2.m_BuffTime = 5;
         b2.m_Fight = 20;
+        b.m_Value = 100;
         list.Add(b2);
         skill.Attribute.m_BuffList.AddRange(list);
         obj_entity.AddBuff(b);
@@ -127,41 +129,24 @@ public class ws_battle_ship : ws_fight_obj
         //    b2.RemoveBuff();
         //});
 
-        string que01 = "蓄力队列>01";
-        TimeCondition singCond = new TimeCondition(skill.Attribute.m_DelayTime);
-        TaskSystem.Task singTask = new TaskSystem.Task("    蓄力任务", singCond);
-        tm.AddTask(singTask);
-        tm.Start(que01, delegate ()
-        {
-            Debug.Log(que01+"队列结束********************************************");
-            for (int i = 0; i < skill.Attribute.m_BuffList.Count; i++)
-            {
-                WsTaskManager wtm = new WsTaskManager();
-                Buff b = skill.Attribute.m_BuffList[i];
+        for (int i = 0; i < skill.Attribute.m_BuffList.Count; i++)
+        {                                    
+            Buff b = skill.Attribute.m_BuffList[i];
+            b.InitBuff(skill.Caster);
+                                                            
+            WsTaskManager wtm2 = new WsTaskManager();
+            string tn = "B                      buff生效任务：" + b.m_BuffName;
+            BuffCondition bc = new BuffCondition(b, b.m_BuffTime);   
+            TaskSystem.Task tbc = new TaskSystem.Task(tn, bc);
+            wtm2.AddTask(tbc);
 
-                TimeCondition singCond3 = new TimeCondition(b.m_DelayTime);
-                TaskSystem.Task singTask3 = new TaskSystem.Task("A           buff延迟任务"+(i+1), singCond3);
-                wtm.AddTask(singTask3);   
-                wtm.Start("           buff延迟队列>" + (i + 1), delegate ()
-                {
-                    //Debug.Log("           buff延迟队列结束>" + (i + 1));   
-                    Debug.Log("buff延迟任务队列结束********************************************");
-                    WsTaskManager wtm2 = new WsTaskManager();
-                    string tn = "B                      buff生效任务：" + b.m_BuffName;
-                    BuffCondition bc = new BuffCondition(b, b.m_BuffTime);
-                    //Debug.Log(tn);
-                    TaskSystem.Task tbc = new TaskSystem.Task(tn, bc);
-                    wtm2.AddTask(tbc);
+            wtm2.Start("000           buff队列>" + (i + 1), delegate ()
+            {                                  
+                b.RemoveBuff();
+                Debug.Log("3.*****************Fight:" + obj_entity.Fight);
+            });
 
-                    wtm2.Start("000           buff队列>" + (i + 1), delegate ()
-                    {
-                        Debug.Log("buff队列队列结束********************************************");
-                        b.RemoveBuff();
-                    });     
-                });
-
-            }
-        });
+        }
 
 
         //TimeCondition singCond2 = new TimeCondition(skill.Attribute.m_DelayTime);
@@ -171,7 +156,7 @@ public class ws_battle_ship : ws_fight_obj
         //{
         //    Debug.Log("队列02结束------------------------------------------");
         //});
-        
+
 
         //BuffCondition bc = new BuffCondition(skill.Attribute.m_BuffList[0],5);
         //Task.Task tbc = new Task.Task("bc任务", bc);

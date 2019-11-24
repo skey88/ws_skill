@@ -15,8 +15,9 @@ namespace SkillSystem
 
     public class Buff
     {
-
-
+        public List<Entity> m_TargetList;
+        public Entity m_Target;
+        public int m_Value;
         /// <summary>
         /// Buff
         /// </summary>
@@ -30,16 +31,30 @@ namespace SkillSystem
         /// </summary>
         public float m_DelayTime;
 
+        public void InitBuff(Entity target)
+        {
+            Debug.Log("InitBuff---------------------------" + m_BuffName);
+            m_TargetList = new List<Entity>();
+            m_TargetList.Add(target);
+            //m_Target = target;
+        }
+
+        public  void InitBuff(List<Entity> targetList)
+        {
+            Debug.Log("InitBuff---------------------------" + m_BuffName);
+            m_TargetList = targetList;
+        }
 
         public virtual void AddBuff()
         {
-            Debug.Log("AddBuff---------------------------"+ m_BuffName);
+            Debug.Log("AddBuff---------------------------"+ m_BuffName);     
         }
 
 
         public virtual void RemoveBuff()
         {
-            Debug.Log("RemoveBuff------------------------" + m_BuffName);
+            Debug.Log("RemoveBuff------------------------" + m_BuffName);  
+             
         }
 
 

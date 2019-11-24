@@ -113,7 +113,7 @@ namespace SkillSystem
             });
         }
 
-        public void Fire02(Skill skill)
+        public void Fire03(Skill skill)
         {
             //伤害计算
             DamageCondtion dmgCond = new DamageCondtion(skill,
@@ -126,6 +126,47 @@ namespace SkillSystem
             m_tm.AddTask(dmgTask);
             //启动任务队列
             m_tm.Start("技能伤害计算流程" + skill.Attribute.Name);
+        }
+
+
+        public void Fire02(Skill skill)
+        {
+            string que01 = "蓄力队列>01";
+            TimeCondition singCond = new TimeCondition(skill.Attribute.m_DelayTime);
+            TaskSystem.Task singTask = new TaskSystem.Task("    蓄力任务", singCond);
+            m_tm.AddTask(singTask);
+            m_tm.Start(que01, delegate ()
+            {
+                Debug.Log(que01 + "队列结束********************************************");
+                for (int i = 0; i < skill.Attribute.m_BuffList.Count; i++)
+                {
+                    WsTaskManager wtm = new WsTaskManager();
+                    Buff b = skill.Attribute.m_BuffList[i];
+
+                    TimeCondition singCond3 = new TimeCondition(b.m_DelayTime);
+                    TaskSystem.Task singTask3 = new TaskSystem.Task("A           buff延迟任务" + (i + 1), singCond3);
+                    wtm.AddTask(singTask3);
+                    wtm.Start("           buff延迟队列>" + (i + 1), delegate ()
+                    {
+                        //Debug.Log("           buff延迟队列结束>" + (i + 1));   
+                        Debug.Log("buff延迟任务队列结束********************************************");
+                        WsTaskManager wtm2 = new WsTaskManager();
+                        string tn = "B                      buff生效任务：" + b.m_BuffName;
+                        BuffCondition bc = new BuffCondition(b, b.m_BuffTime);
+                        //Debug.Log(tn);
+                        TaskSystem.Task tbc = new TaskSystem.Task(tn, bc);
+                        wtm2.AddTask(tbc);
+
+                        wtm2.Start("000           buff队列>" + (i + 1), delegate ()
+                        {
+                            Debug.Log("buff队列队列结束********************************************");
+                            b.RemoveBuff();
+                        });
+                    });
+
+                }
+            });
+
         }
 
     }
