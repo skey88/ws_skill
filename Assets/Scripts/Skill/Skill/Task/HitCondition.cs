@@ -28,12 +28,12 @@ namespace SkillSystem
             {
                 //to-do 根据名字创建特效文件，并绑定处理脚本 HitViewer
                 GameObject go = ResManager.Instance().Load(m_Skill.Attribute.Effect_HitName);
-                go.transform.SetParent(m_Skill.Attribute.Effect_HitParent);
+                go.transform.SetParent(m_Skill.Target.trans);
                 go.transform.localPosition = Vector3.zero;
                 go.transform.LookAt(m_Skill.Target.trans);
                 HitViewer view = go.AddComponent<HitViewer>();
                 //view.Cast(recevier: Handle, time: 0.5f);
-                view.Cast(Handle, 0.5f);
+                view.Cast(Handle, 0.01f);
             }
         }
     }

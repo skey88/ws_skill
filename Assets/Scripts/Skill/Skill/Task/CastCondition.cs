@@ -19,8 +19,9 @@ namespace SkillSystem
             Debug.Log("CastCondition2------------------------");
             //TO-DO 创建特效
             GameObject go = ResManager.Instance().Load(m_Skill.Attribute.Effect_EmitName);
-            //go.transform.SetParent(m_Skill.Target.trans);
-            go.transform.position = m_Skill.Caster.trans.position + Vector3.one ;
+            go.transform.SetParent(m_Skill.Caster.trans);
+            go.transform.position = new Vector3 (m_Skill.Caster.trans.position.x, m_Skill.Caster.trans.position.y, m_Skill.Caster.trans.position.z+1);
+            go.GetComponent<Bullet>().InitBullet(m_Skill); 
             //go.transform.LookAt(m_Skill.Target.trans);
             //go.transform.Translate(m_Skill.Target.trans.position);
              
